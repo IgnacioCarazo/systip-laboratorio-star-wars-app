@@ -1,7 +1,12 @@
+
+
+
+
 plugins {
     id 'application'
     id "org.sonarqube" version "3.1.1"
 }
+mainClassName = "Main"
 
 group 'org.example'
 version '1.0.0'
@@ -28,9 +33,7 @@ jar {
     }
 }
 
-application {
-    mainClass = 'Main'
-}
+
 
 test {
     useJUnitPlatform()
